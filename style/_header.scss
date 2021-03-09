@@ -16,7 +16,7 @@
         }
     }
 
-    @include media {
+    @include w1024 {
         &__hamburger {
             display: none;
         }
@@ -42,7 +42,7 @@
         }
     }
 
-    @include media {
+    @include w1024 {
         &__mobile {
             position: static;
             width: auto;
@@ -84,7 +84,7 @@
         }
     }
 
-    @include media {
+    @include w1024 {
 
         &__ul {
             display: flex;
@@ -142,7 +142,7 @@
         }
     }
 
-    @include media {
+    @include w1024 {
         &__login-container {
             flex-direction: row;
         }
