@@ -1,0 +1,21 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body {
+    color: $text-color;
+    font-family: 'Poppins',sans-serif;
+    font-size: 18px;
+}
+
+.content-width {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+}

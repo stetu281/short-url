@@ -5,13 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="main.css">  
+  <link rel="stylesheet" href="style/main.css">  
   <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
 <body>
-
-
+  <header class="header content-width">
+    <img class="header__logo" src="assets/images/logo.svg" alt="">
+    <div class="header__hamburger">
+      <div class="header__hamburger-line"></div>
+      <div class="header__hamburger-line"></div>
+      <div class="header__hamburger-line"></div>
+    </div>
+    <div class="header__mobile">
+      <nav class="header__nav">
+        <ul class="header__ul">
+          <li class="header__li"><a href="#" class="header__link header__link--hoverstate">Features</a></li>
+          <li class="header__li"><a href="#" class="header__link header__link--hoverstate">Pricing</a></li>
+          <li class="header__li"><a href="#" class="header__link header__link--hoverstate">Resources</a></li>       
+        </ul>
+      </nav>
+      <div class="header__login-container">
+        <button class="header__login-btn">Login</button>
+        <button class="header__signup-btn">Sign Up</button>
+      </div>
+    </div>
+  </header>
   <script src="js/main.js"></script>
 </body>
 </html>
