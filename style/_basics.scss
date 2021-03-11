@@ -17,6 +17,11 @@ button {
     border-radius: 100px;
     background-color: $primary;
     padding: 0.7rem 2rem;
+
+    &:hover {
+        cursor: pointer;
+        background-color: lighten($primary, 20%);
+    }
 }
 
 body {

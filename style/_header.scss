@@ -80,7 +80,7 @@
         font-size: 1.2rem;
 
         &:hover {
-            color: $heading-color;
+            color: $primary;
         }
     }
 
@@ -123,15 +123,12 @@
 
         &:hover {
             cursor: pointer;
+            background: none;
         }
     }
 
     &__signup-btn {
         width: 85%;
-
-        &:hover {
-            background-color: lighten($primary, 20%);
-        }
     }
 
     @include w1024 {

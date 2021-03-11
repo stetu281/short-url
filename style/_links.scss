@@ -27,6 +27,10 @@
         border-radius: $border-radius;
         &--copied {
             background-color: $secondary;
+
+            &:hover {
+                background-color: lighten($secondary, 20%);
+            }
         }
     }
 
