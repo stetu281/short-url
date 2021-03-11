@@ -1,0 +1,60 @@
+.links {
+    &__link-container {
+        background-color: $white;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    &__input {
+        color: $heading-color;
+        border-bottom: 1px solid $text-color;
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+
+    &__output {
+        padding: 1rem;
+        color: $primary;
+        font-size: 0.9rem;
+    }
+
+    &__button {
+        background-color: $primary;
+        color: $white;
+        font-weight: 700;
+        padding: 0.6rem 2rem;
+        width: 90%;
+        margin: 0 auto 20px auto;
+        border-radius: 10px;
+        &--copied {
+            background-color: $secondary;
+        }
+    }
+
+    @include w700 {
+        &__link-container {
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+
+        &__input {
+            border-bottom: none;
+            padding: 0;
+            flex-grow: 1;
+        }
+
+        &__output {
+            padding: 0;
+            margin-right: 20px;
+        }
+
+        &__button {
+            margin: 0;
+            width: 125px;
+        }
+    }
+}
