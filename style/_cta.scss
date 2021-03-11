@@ -1,0 +1,31 @@
+.cta {
+    width: 100%;
+    padding: 100px 0;
+    background-color: $secondary;
+    background-image: url(../assets/images/bg-boost-mobile.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+
+    &__title {
+        color: $white;
+    }
+
+    &__button {
+        margin-top: 20px;
+        background-color: $primary;
+        color: white;
+        font-weight: 700;
+        padding: 0.7rem 2rem;
+        border-radius: 100px;
+    }
+
+}
+
+@include w700 {
+    .cta {
+        background-image: url(../assets/images/bg-boost-desktop.svg);
+        padding: 50px 0;
+    }
+}
