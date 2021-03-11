@@ -118,12 +118,7 @@
 
     &__login-btn {
         background: none;
-        border: none;
         font-size: 1.2rem;
-        font-family: 'Poppins',sans-serif;
-        font-weight: 700;
-        color: $white;
-        padding: 0.7rem 0;
         margin-top: 20px;
 
         &:hover {
@@ -132,10 +127,7 @@
     }
 
     &__signup-btn {
-        @extend .header__login-btn;
-        background-color: $primary;
         width: 85%;
-        border-radius: 50px;
 
         &:hover {
             background-color: lighten($primary, 20%);
@@ -148,14 +140,11 @@
         }
 
         &__login-btn {
-            font-size: 1rem;
             color: $text-color;
             margin: 0 40px 0 0;
         }
 
         &__signup-btn {
-            color: $white;
-            padding: 0.5rem 1.5rem;
             margin: 0;
         }
     }

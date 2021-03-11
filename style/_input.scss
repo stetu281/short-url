@@ -5,7 +5,7 @@
     background-position: right top;
     background-repeat: no-repeat;
     padding: 1.5rem;
-    border-radius: 10px;
+    border-radius: $border-radius;
     position: relative;
     top: -60px;
 
@@ -13,7 +13,7 @@
         width: 100%;
         padding: 0.7rem 1rem;
         font-size: 1rem;
-        border-radius: 10px;
+        border-radius: $border-radius;
         border: none;
 
         &--error {   
@@ -36,15 +36,9 @@
 
     &__button {
         margin-top: 40px;
-        padding: 0.7rem 2rem; 
         width: 100%;
-        background-color: $primary;
         font-size: 1.1rem;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 700;
-        color: $white;
-        border: none;
-        border-radius: 10px;
+        border-radius: $border-radius;
     }
 }
 
