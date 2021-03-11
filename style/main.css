@@ -350,4 +350,91 @@ main {
   }
 }
 
+.stats {
+  text-align: center;
+  font-size: 0.93rem;
+  position: relative;
+  padding: 80px 0;
+}
+.stats__bg-line {
+  width: 8px;
+  height: 50%;
+  background-color: #2acfcf;
+  position: absolute;
+  top: 450px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.stats__title {
+  color: #35323e;
+}
+.stats__text {
+  margin: 20px auto 0 auto;
+  max-width: 470px;
+}
+.stats__cards {
+  margin-top: 50px;
+}
+.stats__card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 70px 30px 30px 30px;
+  position: relative;
+  margin-top: 100px;
+}
+.stats__icon {
+  width: 80px;
+  height: 80px;
+  background-color: #3b3054;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.stats__card-title {
+  color: #35323e;
+}
+.stats__card-text {
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  .stats {
+    font-size: 1rem;
+  }
+  .stats__bg-line {
+    transform: rotate(90deg);
+    height: 80%;
+    top: 160px;
+  }
+  .stats__cards {
+    margin-top: 80px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 350px;
+  }
+  .stats__card {
+    width: 32%;
+    margin-top: 0;
+  }
+  .stats__card:first-child {
+    align-self: flex-start;
+  }
+  .stats__card:last-child {
+    align-self: flex-end;
+  }
+  .stats__icon {
+    margin: 0;
+    left: 30px;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
