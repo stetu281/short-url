@@ -14,7 +14,7 @@ if(localData !== null) {
 }
 
 
-
+//Shorten links
 
 const url = 'https://api.shrtco.de/v2/shorten?url=';
 const input = document.querySelector('.input__input');
@@ -74,6 +74,34 @@ function handleErrors(response) {
             throw new Error("Something went wrong. Please try again");
         }
     } 
-    return response;
-    
+    return response;   
+}
+
+
+//Copy link to clipboard
+
+const buttons = document.querySelectorAll('.links__button');
+
+for (let button of buttons) {
+    button.addEventListener('click', (e) => {
+
+        let copyText = e.target.parentElement.children[1].innerHTML;
+        const ta = document.createElement('textarea');
+        ta.value = copyText;
+        ta.setAttribute('readonly', '');
+        ta.style.position = 'absolute';
+        ta.style.left = '-9999px';
+        document.body.appendChild(ta)
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+
+        e.target.classList.add("links__button--copied");
+        e.target.innerHTML = "Copied!";
+
+        setTimeout(function () {
+            e.target.classList.remove('links__button--copied');
+            e.target.innerHTML = "Copy";
+        }, 5000);
+    })
 }
