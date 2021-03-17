@@ -19,10 +19,11 @@ if(localData !== null) {
 const url = 'https://api.shrtco.de/v2/shorten?url=';
 const input = document.querySelector('.input__input');
 const errorMsg = document.querySelector('.input__error');
+let loading = `<img class="input__loading" src="assets/images/loading.svg" alt="">`;
 
 document.querySelector('.input__button').addEventListener('click', (e) => {
     e.preventDefault();
-
+    e.target.innerHTML = loading;
     let link = url + input.value;
     
     fetch(link)
@@ -31,12 +32,13 @@ document.querySelector('.input__button').addEventListener('click', (e) => {
         .then((data) => {
 
             localStorage.setItem('shortLinkData', JSON.stringify(data))
+            e.target.innerHTML = "Shorten It!";
             buildLink(data);
             input.value = "";
 
         })
         .catch((error) => {
-
+            e.target.innerHTML = "Shorten It!";
             input.classList.add('input__input--error');
             errorMsg.innerHTML = error;
 
@@ -47,6 +49,7 @@ document.querySelector('.input__button').addEventListener('click', (e) => {
             }, 3000);
             
         })
+        
 })
 
 

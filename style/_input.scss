@@ -28,6 +28,7 @@
     &__error {
         position: absolute;
         top: 75px;
+        left: 1.5rem;
         font-size: 0.8rem;
         font-style: italic;
         color: $warning;
@@ -39,6 +40,23 @@
         width: 100%;
         font-size: 1.1rem;
         border-radius: $border-radius;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__loading {
+        width: 30px;
+        animation: rotate .45s linear infinite;
+        margin-right: 20px;
+    }
+    @keyframes rotate {
+        from {
+            transform:rotate(0);
+        }
+        to {
+            transform: rotate(360deg);
+        }
     }
 }
 
@@ -57,6 +75,7 @@
 
         &__error {
             top: 95px;
+            left: 2.5rem;
         }
 
         &__button {
