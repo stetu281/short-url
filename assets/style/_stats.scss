@@ -1,0 +1,106 @@
+.stats {
+    text-align: center;
+    font-size: 0.93rem;
+    position: relative;
+    padding: 80px 0;
+
+    &__bg-line {
+        width: 8px;
+        height: 60%;
+        background-color: $primary;
+        position: absolute;
+        top: 300px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    &__title {
+        color: $heading-color;
+    }
+
+    &__text {
+        margin: 20px auto 0 auto;
+        max-width: 470px;
+    }
+
+    &__cards {
+        margin-top: 50px;
+    }
+
+    &__card {
+        background-color: $white;
+        border-radius: $border-radius;
+        padding: 70px 30px 30px 30px;
+        position: relative;
+        margin-top: 100px;
+    }
+
+    &__icon {
+        width: 80px;
+        height: 80px;
+        background-color: $secondary;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        position: absolute;
+        top: -40px;  
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+
+    }
+
+    &__card-title {
+        color: $heading-color;
+    }
+
+    &__card-text {
+        margin-top: 20px; 
+    }
+
+}
+
+@include w1024 {
+    .stats {
+        font-size: 1rem;
+
+        &__title {
+            font-size: 2rem;
+        }
+
+        &__bg-line {
+            transform: rotate(90deg);
+            height: 80%;
+            top: 160px;
+        }
+
+        &__cards {
+            margin-top: 80px;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 350px;
+        }
+
+        &__card {
+            width: 32%;
+            margin-top: 0;
+
+            &:first-child {
+                align-self: flex-start;
+            }
+
+            &:last-child {
+                align-self: flex-end;
+            }
+        }
+
+        &__icon {
+            margin: 0;
+            left: 30px;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+@mixin w1024 {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin w700 {
+    @media screen and (min-width: 700px) {
+        @content;
+    }
+}

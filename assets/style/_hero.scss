@@ -1,0 +1,65 @@
+.hero {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+
+    &__text-container {
+        order: 2;
+        text-align: center;
+    }
+
+    &__header1 {
+        color: $heading-color;
+        line-height: 2.5rem;
+        margin-top: 50px;
+    }
+
+    &__text {
+        margin-top: 15px;
+    }
+
+    &__button {
+        margin-top: 30px;
+        font-size: 1.2rem;
+    }
+
+    &__img {
+        width: 150%;
+    }
+
+    @include w700 {
+        &__img {
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+
+
+} 
+@include w1024 {
+    .hero {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        &__text-container {
+            min-width: 500px;
+            text-align: left;
+        }
+
+        &__header1 {
+            margin: 0;
+            font-size: 4rem;
+            line-height: 4.5rem;
+        }
+
+        &__text {
+            max-width: 400px;
+        }
+
+        &__img {
+            order: 2;
+            width: 80%;
+        }
+    }
+}
